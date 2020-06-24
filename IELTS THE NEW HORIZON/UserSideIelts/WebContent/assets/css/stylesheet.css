@@ -1,0 +1,48 @@
+/* Style Sheet for Darwin Open Systems web site.
+ * This is the web: go ahead and borrow this page, but change it for 
+ * your own web, and pass it on with the same terms of re-use.
+ * $Id: stylesheet.css,v 1.1 2002/10/26 13:53:54 ian Exp $
+ */
+
+/* Attributes named after an HTML element apply to all occurrences of type. */
+
+
+
+.chat1
+{
+	 background: url("../images/b3.jpg") no-repeat fixed;
+	 
+	 padding-bottom:30%;
+	 background-color: #cccccc;
+	 background-size:cover;
+	 padding-bottom:8%;
+	 
+	 
+}
+.chat1:after {
+  content: "";
+  position: absolute;
+  
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+.grp
+{
+	
+	background:#FFDAB9;
+	text-align:center;
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+	margin-top:5%;
+	padding-left:40px;
+	margin-left:10%;
+	width:100%;
+	
+	
+}
+

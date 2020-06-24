@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.splitter-container, .splitter-container1, .splitter-container2, .splitter-container3 {
+    
+    height: 750px;
+    width: 100%;
+}

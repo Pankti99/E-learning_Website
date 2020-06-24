@@ -1,0 +1,154 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+.modal-open:hover
+{
+  background-color: #FFB6C1;
+}
+
+.modal-body
+{
+  color: #7b7b7b;
+  padding: 15px 0;
+  margin-left:10%;
+
+}
+.modal-body1
+{
+  color: #7b7b7b;
+  padding: 15px 0;
+  text-align: center;
+  
+
+}
+.modal-open11
+{
+
+  padding: 6px 16px;
+  border-radius:10px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  background-color:#1E90FF;
+  color:white; 
+  font-size: 18px;
+  font-family: verdana;
+  margin-top:-50px;
+  width:15%;
+  height:50px;
+}
+.modal-open3
+{
+
+  padding: 6px 16px;
+  border-radius:10px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  background-color:#1E90FF;
+  color:white; 
+  font-size: 18px;
+  font-family: verdana;
+  margin-top:40px;
+  margin-left: 25%;
+  width:50%;
+  height:40px;
+}
+.tips_del
+{
+  color: black;
+
+}
+.tips_del1
+{
+  color: black;
+  margin-left: 10px;
+
+}
+.tips
+{
+  height:200px; 
+  width: 50%;
+  margin-left:25%;
+  background: white;
+}
+.modal
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+  overflow-y: initial ;
+}
+
+
+.modal-content
+{
+  background-color: #fff;
+  margin-top: 100px;
+  width:80%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 4px;
+  z-index: 4;
+}
+.modal-content1
+{
+  background-color: #fff;
+  margin-top: 100px;
+  width:50%;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 4px;
+
+
+ z-index: 4;
+}
+.modal-header
+{
+  font-weight: 500;
+  padding: 10px 0;
+  font-size: 26px;
+
+}
+.modal-header .modal-close
+{
+  float: right;
+  font-size: 20px;
+  background:white;
+  border:0;
+  outline:0;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.modal-footer
+{
+  padding: 15px 0;
+
+}
+
+.modal-footer .modal-close
+{
+  padding: 8px 16px;
+  font-size: 20px;
+  border:none;
+  outline:none;
+  border-radius: 4px;
+  color:#1a73e8;
+}
