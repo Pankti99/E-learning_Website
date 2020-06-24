@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+
+		<action name="Materialwriting" class="com.action.LoginAction" method="Materialwriting">
+			<result name="success">/Materialwriting.jsp</result>
+		</action>	
+		<action name="MaterialReading" class="com.action.LoginAction" method="MaterialReading">
+			<result name="success">/MaterialReading.jsp</result>
+		</action>	
+		<action name="MaterialListening" class="com.action.LoginAction" method="MaterialListening">
+			<result name="success">/MaterialListening.jsp</result>
+		</action>	
+		<action name="MaterialSpeaking" class="com.action.LoginAction" method="MaterialSpeaking">
+			<result name="success">/MaterialSpeaking.jsp</result>
+		</action>	
+
+
+
+		<action name="showChat" class="com.action.GroupChatAction" method="showChat">
+			<result name="success">/GroupChat.jsp</result>
+		</action>	
+		<action name="submitAnswer" class="com.action.GroupChatAction" method="submitAnswer">
+			<result name="success" type="redirectAction">showChat</result>
+		</action>	
+		<action name="saveContactUs" class="com.action.ContactUsAction" method="saveContactUs">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="loginAsUser" class="com.action.LoginAction" method="loginAsUser">
+			<result name="success">/index.jsp</result>
+			<result name="Error">/login.jsp</result>
+		</action>
+		<action name="logout" class="com.action.LoginAction" method="logout">
+			<result name="success">/login.jsp</result>
+		</action>
+		<action name="ForgotPassword" class="com.action.LoginAction" method="ForgotPassword">
+			<result name="success">/ForgotPassword.jsp</result>
+		</action>
+		<action name="ForgotUsername" class="com.action.LoginAction" method="ForgotUsername">
+			<result name="success">/ForgotUserName.jsp</result>
+		</action>
+	
+		<action name="showVocabulary" class="com.action.VocabularyAction" method="showVocabulary">
+			<result name="success">/AboutVocabulary.jsp</result>
+		</action>
+
+		<action name="showVocabularyList" class="com.action.VocabularyAction" method="showVocabularyList">
+			<result name="success">/vocabularyList.jsp</result>
+		</action>
+			
+		<action name="showWrittingList" class="com.action.MaterialTestAction" method="showWrittingList">
+			<result name="success">/MaterialWrittingExam.jsp</result>
+		</action>
+		
+		<action name="showWrittingPessage" class="com.action.MaterialTestAction" method="showWrittingPessage">
+			<result name="success">/WrittingPessage.jsp</result>
+		</action>
+		
+		<action name="saveWirttingPessageAns" class="com.action.MaterialTestAction" method="saveWirttingPessageAns">
+			<result name="success">/examCompleted.jsp</result>
+		</action>
+		
+		<action name="showExamQuestion" class="com.action.VocabularyAction" method="showExamQuestion">
+			<result name="success">/showExamQuestion.jsp</result>
+		</action>
+		<action name="submitResult" class="com.action.VocabularyAction" method="submitResult">
+			<result name="success">/examCompleted.jsp</result>
+		</action>
+		<action name="showVocabularyResultList" class="com.action.ShowExamResultAction" method="showVocabularyResult">
+			<result name="success">/showVocabularyResultList.jsp</result>
+		</action>
+		<action name="showWrittingResultList" class="com.action.ShowExamResultAction" method="getWrittingPessageList">
+			<result name="success">/showWritingResultList.jsp</result>
+		</action>		
+		<action name="showReadingPessageName" class="com.action.ReadingPessageAction" method="showReadingPessageName">
+			<result name="success">/showReadingPessageName.jsp</result>
+		</action>		
+		<action name="showReadingPessageQuestion" class="com.action.ReadingPessageAction" method="showReadingPessageQuestion">
+			<result name="success">/showReadingPessageQuestion.jsp</result>
+		</action>		
+		<action name="saveReadingExamResult" class="com.action.ReadingPessageAction" method="saveReadingExamResult">
+			<result name="success">/examCompleted.jsp</result>
+		</action>		
+		<action name="showReadingResultList" class="com.action.ReadingPessageAction" method="getReadingPessageResult">
+			<result name="success">/showReadingResultList.jsp</result>
+		</action>
+				
+		<action name="showListeningName" class="com.action.ListeningPessageAction" method="showListeningName">
+			<result name="success">/showListeningName.jsp</result>
+		</action>		
+		<action name="showListeningPessageName" class="com.action.ListeningPessageAction" method="showListeningQuestion">
+			<result name="success">/showListeningQuestion.jsp</result>
+		</action>		
+		<action name="saveListeningExamResult" class="com.action.ListeningPessageAction" method="saveListeningExamResult">
+			<result name="success">/examCompleted.jsp</result>
+		</action>		
+		<action name="showListeningResultList" class="com.action.ListeningPessageAction" method="getReadingPessageResult">
+			<result name="success">/showListeningResultList.jsp</result>
+		</action>		
+		
+		
+		<action name="showSpeakingName" class="com.action.ListeningPessageAction" method="showSpeakingTest">
+			<result name="success">/showSpeakingBookSlot.jsp</result>
+		</action>		
+		<action name="showSpeakingTest" class="com.action.ListeningPessageAction" method="showSpeakingResultList">
+			<result name="success">/showSpeakingVedioChat.jsp</result>
+		</action>		
+		<action name="showSpeakingResultList" class="com.action.ReadingPessageAction" method="showSpeakingResultList">
+			<result name="success">/showSpeakingResultList.jsp</result>
+		</action>
+		
+		<action name="bookSlotForSpeaking" class="com.action.ListeningPessageAction" method="bookSlotForSpeaking">
+			<result name="success">/bookingCompleted.jsp</result>
+		</action>
+		<action name="showSpeakingSlotList" class="com.action.ListeningPessageAction" method="showSpeakingSlotList">
+			<result name="success">/SpeakingExamList.jsp</result>
+		</action>
+		
+		<action name="startSpeakingPessage" class="com.action.ListeningPessageAction" method="showSpeakingSlotList">
+			<result name="success">/showSpeakingVedioChat.jsp</result>
+		</action>
+		
+		
+		<action name="examCompleted" class="com.action.ReadingPessageAction" method="examCompleted">
+			<result name="success">/bookingCompleted.jsp</result>
+		</action>		
+
+<!-- 		MockTest		 -->
+		<action name="showWrittingListMock" class="com.action.MaterialTestAction" method="showWrittingListMock">
+			<result name="success">/MaterialWrittingExamMock.jsp</result>
+		</action>
+
+		<action name="showReadingPessageNameMock" class="com.action.ReadingPessageAction" method="showReadingPessageNameMock">
+			<result name="success">/showReadingPessageNameMock.jsp</result>
+		</action>		
+
+		<action name="showListeningNameMock" class="com.action.ListeningPessageAction" method="showListeningNameMock">
+			<result name="success">/showListeningNameMock.jsp</result>
+		</action>		
+
+		<action name="showSpeakingNameMock" class="com.action.ListeningPessageAction" method="showSpeakingTestMock">
+			<result name="success">/showSpeakingBookSlotMock.jsp</result>
+		</action>		
+		
+		<action name="showMockResultList" class="com.action.ListeningPessageAction" method="showMockResultList">
+			<result name="success">/showMockResultList.jsp</result>
+		</action>		
+		
+				<action name="Materialwriting1" class="com.action.LoginAction" method="Materialwriting">
+			<result name="success">/Materialwriting1.jsp</result>
+		</action>	
+		
+		<action name="Materialwriting2" class="com.action.LoginAction" method="Materialwriting">
+			<result name="success">/Materialwriting2.jsp</result>
+		</action>	
+<action name="MaterialReading1" class="com.action.LoginAction" method="MaterialReading">
+			<result name="success">/MaterialReading1.jsp</result>
+		</action>	
+		
+		<action name="MaterialReading2" class="com.action.LoginAction" method="MaterialReading">
+			<result name="success">/MaterialReading2.jsp</result>
+		</action>	
+		<action name="MaterialListening1" class="com.action.LoginAction" method="MaterialListening">
+			<result name="success">/MaterialListening1.jsp</result>
+		</action>	
+		<action name="MaterialSpeaking1" class="com.action.LoginAction" method="MaterialSpeaking">
+			<result name="success">/MaterialSpeaking1.jsp</result>
+		</action>	
+		<action name="MaterialSpeaking2" class="com.action.LoginAction" method="MaterialSpeaking">
+			<result name="success">/MaterialSpeaking2.jsp</result>
+		</action>	
+		
+		
+		
+<!-- 		<action name="showChat?id=1" class="com.action.ListeningPessageAction" method="showChat"> -->
+<!-- 			<result name="success">/chat.jsp</result> -->
+<!-- 		</action>		 -->
+		
+		
+	</package>
+</struts>  
